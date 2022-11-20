@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Development certificates
+localhost.pem
+localhost-key.pem

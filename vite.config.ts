@@ -8,6 +8,10 @@ export default defineConfig({
     headers: {
       'Cross-Origin-Opener-Policy': 'same-origin',
       'Cross-Origin-Embedder-Policy': 'require-corp'
+    },
+    https: {
+      cert: 'localhost.pem',
+      key: 'localhost-key.pem'
     }
   },
 })
