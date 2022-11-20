@@ -109,10 +109,19 @@
     font-weight: 500;
     font-family: inherit;
     background-color: hsl(0, 0%, 10%);
+    @media (prefers-color-scheme: light) {
+      background-color: hsl(0, 0%, 95%);
+    }
     cursor: pointer;
-    transition: background-color 0.25s;
+    transition: all 0.25s;
     &:hover {
       background-color: hsl(0, 0%, 11%);
+      border-color: #646cff;
+
+      @media (prefers-color-scheme: light) {
+        background-color: hsl(0, 0%, 96%);
+        border-color: #646cff;
+      }
     }
     &:focus,
     &:focus-visible {
