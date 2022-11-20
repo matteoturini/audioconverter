@@ -66,7 +66,7 @@
 
   async function onFilePicked() {
     if (input.files[0].size > 512_000_000) {
-      alert("File too big");
+      alert("File too big, errors may happen!");
     }
     const { name } = input.files[0];
     const ouputFilename = 'output.' + $selectedValue;
