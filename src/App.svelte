@@ -81,6 +81,7 @@
 
 <main>
   <h1>Audio conversion</h1>
+  <label for="filetype">Convert your file to:</label>
   <select on:change={(ev) => selectedValue.set(ev.currentTarget.value)} value={$selectedValue} name="filetype" id="filetype">
     {#each fileTypes as type}
       <option value={type.format}>
