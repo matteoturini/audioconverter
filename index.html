@@ -13,5 +13,10 @@
     
     <!-- GitHub Pages + FFmpeg.wasm -->
     <script src="/coi-serviceworker.min.js"></script>
+    <script>
+      // Auto HTTPS
+      // im too tired to fix github pages
+      if (location.protocol === 'http:') location.protocol = 'https';
+    </script>
   </body>
 </html>
