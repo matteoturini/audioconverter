@@ -88,7 +88,7 @@
       </option>
     {/each}
   </select>
-  <button on:click={onConversion}>Abrir arquivo...</button>
+  <button on:click={onConversion}>Open file...</button>
   <input on:change={onFilePicked} type="file" name="input" id="input" style="display: none;" bind:this={input}>
   <progress value={$conversion} id="conversion" hidden={$conversion === 0} />
 </main>
